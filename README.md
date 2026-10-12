@@ -23,6 +23,7 @@
 - [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🛠️ Frameworks & Composable Architecture](#️-frameworks--composable-architecture)
 - [🌟 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [⚖️ Disclaimer](#️-disclaimer)
 
@@ -94,6 +95,28 @@ For teams engineering bespoke internal platforms and custom enterprise stacks, c
 ## 🌟 Star History
 
 [![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-No-Code-Custom-Data-Modeling&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-No-Code-Custom-Data-Modeling&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+Thank you so much for exploring and using this repository! If this curated guide helps you architect schemas, select the right no-code database stack, or build faster:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork and share** it with your fellow developers, builders, and community.
+- ☕ **Buy me a coffee**: If you'd like to support ongoing updates and maintenance, consider sponsoring via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007):
+
+<p align="left">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa?style=for-the-badge&logo=github-sponsors&logoColor=white" alt="Sponsor on GitHub" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
+  </a>
+</p>
+
+Your support and contributions keep this directory independent, accurate, and actively maintained!
 
 ---
 
