@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-No-Code-Custom-Data-Modeling/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-No-Code-Custom-Data-Modeling?style=flat-square&logo=github" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-No-Code-Custom-Data-Modeling/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-No-Code-Custom-Data-Modeling?style=flat-square&logo=github" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-No-Code-Custom-Data-Modeling/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-No-Code-Custom-Data-Modeling?style=flat-square&logo=github" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-No-Code-Custom-Data-Modeling/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-No-Code-Custom-Data-Modeling?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -60,7 +60,7 @@ Below is a comparison of premier commercial SaaS platforms for visual custom dat
 
 Explore the top self-hostable and open-source data modeling tools, sorted by live GitHub star popularity:
 
-| Project & Repository 📦 | GitHub Stars ⭐ | License 📜 | Highlights & Architecture 💡 |
+| Project & Repository 📦 | GitHub_Stars ⭐ | License 📜 | Highlights & Architecture 💡 |
 | :--- | :--- | :--- | :--- |
 | **[Supabase](https://github.com/supabase/supabase)** | [![Stars](https://img.shields.io/github/stars/supabase/supabase?style=social&color=white)](https://github.com/supabase/supabase/stargazers) | Apache-2.0 | Complete open-source Firebase alternative featuring full PostgreSQL visual table editor, real-time subscriptions, SQL schema designer, auth, and auto-generated REST/GraphQL APIs. |
 | **[NocoDB](https://github.com/nocodb/nocodb)** | [![Stars](https://img.shields.io/github/stars/nocodb/nocodb?style=social&color=white)](https://github.com/nocodb/nocodb/stargazers) | AGPL-3.0 | Leading open-source Airtable alternative. Connects to any existing relational database (PostgreSQL, MySQL, SQLite, SQL Server) and turns it into a smart spreadsheet with Grid, Gallery, Kanban, and Form views. |
