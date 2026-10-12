@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradient -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Filters for Glow Effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 44px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 19px;
+      fill: #94a3b8;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #38bdf8;
+    }
+    .grid-node {
+      animation: pulseNode 4s ease-in-out infinite alternate;
+    }
+    .flow-line {
+      stroke-dasharray: 8 6;
+      animation: flowDash 20s linear infinite;
+    }
+    .floating-card-1 {
+      animation: float1 6s ease-in-out infinite alternate;
+    }
+    .floating-card-2 {
+      animation: float2 7s ease-in-out infinite alternate;
+    }
+    @keyframes flowDash {
+      to {
+        stroke-dashoffset: -200;
+      }
+    }
+    @keyframes float1 {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-12px); }
+    }
+    @keyframes float2 {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(10px); }
+    }
+    @keyframes pulseNode {
+      0% { opacity: 0.3; transform: scale(0.98); }
+      100% { opacity: 0.8; transform: scale(1.02); }
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="340" rx="16" fill="url(#bg-grad)" />
+  <rect width="1200" height="340" rx="16" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
+
+  <!-- Animated Background Circuit / Relational Schema Lines (Deep Background) -->
+  <g opacity="0.4" class="grid-node">
+    <!-- Grid Pattern Lines -->
+    <path d="M 100,0 L 100,340 M 300,0 L 300,340 M 500,0 L 500,340 M 700,0 L 700,340 M 900,0 L 900,340 M 1100,0 L 1100,340" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+    <path d="M 0,80 L 1200,80 M 0,160 L 1200,160 M 0,240 L 1200,240" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+  </g>
+
+  <!-- Dynamic Relational Connecting Flows (Behind Text) -->
+  <g opacity="0.35">
+    <path class="flow-line" d="M 50,280 C 250,320 400,180 600,220 C 800,260 950,120 1150,150" fill="none" stroke="url(#accent-grad)" stroke-width="2.5" />
+    <path class="flow-line" d="M 50,60 C 300,120 450,40 700,100 C 950,160 1050,40 1160,80" fill="none" stroke="#06b6d4" stroke-width="2" />
+  </g>
+
+  <!-- Floating Visual Schema Entities / Table Cards (Right & Ambient Background) -->
+  <g class="floating-card-1" opacity="0.75" transform="translate(870, 45)">
+    <!-- Table Card: Users Entity -->
+    <rect width="250" height="120" rx="10" fill="#1e293b" stroke="#6366f1" stroke-width="1.5" filter="url(#soft-glow)" />
+    <rect width="250" height="28" rx="10" fill="#312e81" />
+    <circle cx="16" cy="14" r="4" fill="#ef4444" />
+    <circle cx="28" cy="14" r="4" fill="#eab308" />
+    <circle cx="40" cy="14" r="4" fill="#22c55e" />
+    <text x="60" y="19" font-family="monospace" font-size="12" fill="#c7d2fe" font-weight="bold">Entity: Workspace_DB</text>
+    <text x="18" y="48" font-family="monospace" font-size="11" fill="#94a3b8">🔑 id: uuid [PK]</text>
+    <text x="18" y="68" font-family="monospace" font-size="11" fill="#38bdf8">🔗 rel_records: 1-to-Many</text>
+    <text x="18" y="88" font-family="monospace" font-size="11" fill="#a7f3d0">⚡ dynamic_view: Kanban/Grid</text>
+    <text x="18" y="106" font-family="monospace" font-size="11" fill="#f472b6">✨ schema_state: Reactive</text>
+  </g>
+
+  <g class="floating-card-2" opacity="0.65" transform="translate(930, 185)">
+    <!-- Table Card: Schema Relations -->
+    <rect width="230" height="110" rx="10" fill="#0f172a" stroke="#06b6d4" stroke-width="1.2" />
+    <rect width="230" height="26" rx="10" fill="#0e7490" />
+    <text x="20" y="18" font-family="monospace" font-size="12" fill="#cffafe" font-weight="bold">Table: Custom_Attributes</text>
+    <text x="18" y="46" font-family="monospace" font-size="11" fill="#94a3b8">📊 visual_type: Formula</text>
+    <text x="18" y="66" font-family="monospace" font-size="11" fill="#38bdf8">🌐 api_sync: GraphQL / REST</text>
+    <text x="18" y="88" font-family="monospace" font-size="11" fill="#cbd5e1">🛡️ rbac_rules: Granular</text>
+  </g>
+
+  <!-- Ambient Glowing Orbs -->
+  <circle cx="150" cy="70" r="110" fill="#6366f1" opacity="0.12" filter="url(#glow)" />
+  <circle cx="850" cy="240" r="130" fill="#ec4899" opacity="0.10" filter="url(#glow)" />
+  <circle cx="1080" cy="90" r="90" fill="#06b6d4" opacity="0.12" filter="url(#glow)" />
+
+  <!-- Foreground Content: Header, Category Tag, Title, Subtitle, Highlights -->
+  <!-- Category Pill / Badge -->
+  <g transform="translate(70, 48)">
+    <rect width="260" height="30" rx="15" fill="rgba(56, 189, 248, 0.12)" stroke="#38bdf8" stroke-width="1.2" />
+    <circle cx="16" cy="15" r="4.5" fill="#38bdf8">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="30" y="20" class="badge-text">NO-CODE &amp; VISUAL DATA ARCHITECTURE</text>
+  </g>
+
+  <!-- Main Title with Gradient Accent -->
+  <text x="70" y="125" class="title-text">
+    Awesome No-Code <tspan fill="url(#accent-grad)">Custom Data Modeling</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="70" y="165" class="subtitle-text">
+    Curated SaaS Platforms, Visual Schema Builders &amp; Open-Source Relational Engines
+  </text>
+
+  <!-- Feature Pills / Tags in Foreground -->
+  <g transform="translate(70, 205)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="170" height="34" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+      <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#e2e8f0" font-weight="600">📊 Visual Schema Design</text>
+    </g>
+
+    <!-- Pill 2 -->
+    <g transform="translate(182, 0)">
+      <rect width="185" height="34" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+      <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#e2e8f0" font-weight="600">⚡ Relational Databases</text>
+    </g>
+
+    <!-- Pill 3 -->
+    <g transform="translate(379, 0)">
+      <rect width="175" height="34" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+      <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#e2e8f0" font-weight="600">🔓 Self-Hosted Sovereignty</text>
+    </g>
+
+    <!-- Pill 4 -->
+    <g transform="translate(566, 0)">
+      <rect width="165" height="34" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+      <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#e2e8f0" font-weight="600">🚀 Airtable Alternatives</text>
+    </g>
+  </g>
+
+  <!-- Bottom Interactive / Stats Summary Bar in Foreground -->
+  <g transform="translate(70, 275)">
+    <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" fill="#64748b" font-weight="500">
+      ⚡ Comprehensive Directory • 🏢 Enterprise SaaS &amp; Market Dynamics • ⭐ Live GitHub Star Rankings • 🔒 Data Sovereignty
+    </text>
+  </g>
+</svg>
